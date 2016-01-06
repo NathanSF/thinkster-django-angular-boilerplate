@@ -41,11 +41,11 @@
         * @memberOf thinkster.authentication.services.Authentication
         */
         function register(email, password, username) {
-            return $http.post('/api/v1/accounts/', {
-                username: username,
-                password: password,
-                email: email
-            });
+          return $http.post('/api/v1/accounts/', {
+            username: username,
+            password: password,
+            email: email
+          });
         }
 
         /**
