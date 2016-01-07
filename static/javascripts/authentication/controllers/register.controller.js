@@ -16,6 +16,10 @@
   */
   function RegisterController($location, $scope, $http, Authentication) {
 
+    var vm = this;
+
+    vm.register = register;
+
     activate();
 
     /**
@@ -30,10 +34,6 @@
       }
     }
 
-    var vm = this;
-
-    vm.register = register;
-
     /**
     * @name register
     * @desc Try to register a new user
@@ -43,6 +43,7 @@
     * @returns {Promise}
     * @memberOf thinkster.authentication.services.Authentication
     */
+    // ERROR IS HERE EMAIL PASSWORD USERNAME!!!
     function register(email, password, username) {
       return $http.post('/api/v1/accounts/', {
         username: username,

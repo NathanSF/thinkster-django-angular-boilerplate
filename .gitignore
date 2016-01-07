@@ -15,3 +15,5 @@ dist/
 
 # Staticfiles
 staticfiles/
+
+*.sqlite3-journal
